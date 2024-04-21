@@ -10,8 +10,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.4;
-  color: #000000;
+  color: #2F2F2F;
 
   background-color: #F4ECE1;
   box-sizing: border-box;
@@ -19,7 +18,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #2F2F2F;
 }
 
 button {
@@ -69,7 +68,7 @@ button {
   font-size: 22px;
 }
 
-.header__cart  {
+.header__cart {
   display: flex;
   padding: 10px;
   cursor: pointer;
@@ -88,4 +87,93 @@ button {
   background-color: #EC2633;
   color: #FFFFFF;
   border-radius: 50%;
+}
+
+.main {
+  display: flex;
+  margin-top: 40px;
+}
+
+.main-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-top: 60px;
+}
+
+.main__title {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.main__title-first {
+  font-weight: 700;
+  font-size: 125px;
+  color: #FF7E00;
+}
+
+.main__title-second {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: .95;
+}
+
+.main__title-decoration {
+  position: relative;
+  top: -70px;
+  left: -110px;
+}
+
+.main__description {
+  width: 570px;
+  font-size: 22px;
+  font-weight: 1.38;
+  color: #909090;
+}
+
+.main__button {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: .94;
+  margin-top: 44px;
+  padding: 25px 40px;
+  background-color: #2F2F2F;
+  color: #F4ECE1;
+  border-radius: 84px;
+  box-shadow: 0 20px 32px -8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.main__rating {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.main__rating-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.main__rating-stars-icon {
+  width: 28px;
+  height: 28px;
+  background-image: url('./img/icons/star.svg');
+}
+
+.main__rating-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 11px;
+}
+
+.main__rating-info {
+  color: #909090;
+}
+
+.main-decoration {
+  position: relative;
+  left: -80px;
 }
