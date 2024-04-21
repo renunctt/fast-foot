@@ -326,3 +326,67 @@ button {
   background-color: green;
   color: #FFFFFF;
 }
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 130px;
+}
+
+.contact__title {
+  font-weight: 700;
+  font-size: 44px;
+}
+
+.contact__info {
+  margin-top: 30px;
+  color: #737B7D;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.contact__form-adress {
+  display: flex;
+  gap: 30px;
+}
+
+.postcode-input {
+  width: 150px;
+}
+
+.contact__input {
+  font-size: 20px;
+  padding: 12px 16px;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.contact__input:focus {
+  outline: none;
+}
+
+.contact__submit {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 16px 20px;
+  background-color: green;
+  cursor: pointer;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.contact-right__adress {
+  color: #383C3E;
+}
