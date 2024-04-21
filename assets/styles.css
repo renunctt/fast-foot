@@ -177,3 +177,73 @@ button {
   position: relative;
   left: -80px;
 }
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.trending__title {
+  font-weight: 700;
+  font-size: 44px;
+}
+
+.trending__info {
+  margin-top: 20px;
+  color: #737B7D;
+}
+
+.trending__food {
+  display: flex;
+  height: 490px;
+  gap: 52px;
+  margin-top: 40px;
+}
+
+.trending__food-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.food__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.food__info-title {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.food__info-price {
+  font-weight: 600;
+  font-size: 36px;
+  color: #FEBB41;
+}
+
+.food__info-rating {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.food__info-rating-icon {
+  width: 42px;
+  height: 36px;
+  background-image: url('./img/icons/star-black.svg');
+}
+
+.food__info-rating-info {
+  font-size: 18px;
+  margin-left: 40px;
+}
+
+.food__info-button {
+  width: 300px;
+  padding: 22px 100px;
+  border: 1px solid #737B7D;
+  cursor: pointer;
+}
