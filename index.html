@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Foo | Fast Food Delivery</title>
   <link rel="stylesheet" type="text/css" href="assets/styles.css" />
+  <script defer src="index.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
     <div class="container">
-      <header class="header">
+      <header class="header" id="home">
         <a class="header__logo" href="/">
           <img class="header__logo-img" src="assets/img/logo.svg" alt="Logo" />
           <span class="header__logo-title">
@@ -26,11 +27,11 @@
           <a class="header__nav-link" href="#menu">
             Menu
           </a>
+          <a class="header__nav-link" href="#popular">
+            Popular
+          </a>
           <a class="header__nav-link" href="#contact">
             Contact
-          </a>
-          <a class="header__nav-link" href="#shop">
-            Shop
           </a>
         </nav>
 
@@ -80,7 +81,7 @@
         </div>
       </main>
 
-      <section class="trending">
+      <section class="trending" id="menu">
         <h2 class="trending__title">
           Todays Trending Food
         </h2>
@@ -123,7 +124,7 @@
         </aside>
       </section>
 
-      <section class="popular">
+      <section class="popular" id="popular">
         <h2 class="popular__title">
           Popular Items
         </h2>
@@ -132,140 +133,16 @@
           Most Ordered Items
         </p>
 
-        <aside class="popular__items">
-          <div class="item">
-            <div class="item__img">
-              <img class="item__img-img" src="assets/img/foods/cappuccino.jpg" alt="cappuccino" />
-            </div>
-
-            <div class="item__info">
-              <div class="item__container">
-                <h3 class="item__title">
-                  Cappuccino
-                </h3>
-
-                <p class="item__desc">
-                  Served with lorem ipsum
-                </p>
-
-                <p class="item__price">
-                  $ 2.0
-                </p>
-              </div>
-
-              <button class="item__button">
-                + ADD
-              </button>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="item__img">
-              <img class="item__img-img" src="assets/img/foods/cappuccino.jpg" alt="cappuccino" />
-            </div>
-
-            <div class="item__info">
-              <div class="item__container">
-                <h3 class="item__title">
-                  Cappuccino
-                </h3>
-
-                <p class="item__desc">
-                  Served with lorem ipsum
-                </p>
-
-                <p class="item__price">
-                  $ 2.0
-                </p>
-              </div>
-
-              <button class="item__button">
-                + ADD
-              </button>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="item__img">
-              <img class="item__img-img" src="assets/img/foods/cappuccino.jpg" alt="cappuccino" />
-            </div>
-
-            <div class="item__info">
-              <div class="item__container">
-                <h3 class="item__title">
-                  Cappuccino
-                </h3>
-
-                <p class="item__desc">
-                  Served with lorem ipsum
-                </p>
-
-                <p class="item__price">
-                  $ 2.0
-                </p>
-              </div>
-
-              <button class="item__button">
-                + ADD
-              </button>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="item__img">
-              <img class="item__img-img" src="assets/img/foods/cappuccino.jpg" alt="cappuccino" />
-            </div>
-
-            <div class="item__info">
-              <div class="item__container">
-                <h3 class="item__title">
-                  Cappuccino
-                </h3>
-
-                <p class="item__desc">
-                  Served with lorem ipsum
-                </p>
-
-                <p class="item__price">
-                  $ 2.0
-                </p>
-              </div>
-
-              <button class="item__button">
-                + ADD
-              </button>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="item__img">
-              <img class="item__img-img" src="assets/img/foods/cappuccino.jpg" alt="cappuccino" />
-            </div>
-
-            <div class="item__info">
-              <div class="item__container">
-                <h3 class="item__title">
-                  Cappuccino
-                </h3>
-
-                <p class="item__desc">
-                  Served with lorem ipsum
-                </p>
-
-                <p class="item__price">
-                  $ 2.0
-                </p>
-              </div>
-
-              <button class="item__button">
-                + ADD
-              </button>
-            </div>
-          </div>
+        <select id="sortSelect" onchange="sortItems()">
+          <option value="о">Обычно</option>
+          <option value="asc">Возростание</option>
+          <option value="desc">Уменшение</option>
+        </select>
+        <aside class="popular__items" id="popular-items">
         </aside>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <aside class="contact-left">
           <h2 class="contact__title">
             Contact us
@@ -312,7 +189,8 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4355.1132319479075!2d76.92462160290975!3d43.23697145944783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836ecfc551fcd5%3A0xd5a3ba5fdb81e3a7!2sMarrone%20Rosso!5e0!3m2!1sru!2skz!4v1713740136872!5m2!1sru!2skz"
             width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </aside>
       </section>
     </div>

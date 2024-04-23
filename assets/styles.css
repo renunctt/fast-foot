@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 * {
@@ -66,6 +68,10 @@ button {
 
 .header__nav-link {
   font-size: 22px;
+}
+
+.header__nav-link:hover {
+  text-decoration: underline;
 }
 
 .header__cart {
@@ -389,4 +395,9 @@ button {
 
 .contact-right__adress {
   color: #383C3E;
+}
+
+#sortSelect {
+  width: 300px;
+  padding: 10px;
 }
