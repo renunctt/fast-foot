@@ -330,7 +330,7 @@ button {
 .contact {
   display: flex;
   justify-content: space-between;
-  margin-top: 130px;
+  margin: 130px 0;
 }
 
 .contact__title {
