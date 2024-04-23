@@ -43,9 +43,6 @@ function renderItems(items) {
   })
 }
 
-renderItems(items)
-const addItem = document.querySelectorAll('.item__button')
-
 function setCartItem(id) {
   const count = cartItems.get(id)
   if (count < 99) {
@@ -54,12 +51,15 @@ function setCartItem(id) {
   renderCart()
 }
 
-addItem.forEach(function(button) {
-  button.addEventListener('click', (e) => {
-    const itemId = e.target.parentNode.parentNode.id
-    setCartItem(itemId)
+function start() {
+  const addItem = document.querySelectorAll('.item__button')
+  addItem.forEach(function(button) {
+    button.addEventListener('click', (e) => {
+      const itemId = e.target.parentNode.parentNode.id
+      setCartItem(itemId)
+    })
   })
-})
+}
 
 document.querySelector('.food__info-button').addEventListener('click', () => {
   setCartItem('Basmati Kachhi Biriyani')
@@ -87,7 +87,10 @@ function sortItems() {
   } else {
     renderItems(items)
   }
+  start()
 }
+
+sortItems()
 
 
 
